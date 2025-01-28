@@ -22,18 +22,35 @@ Instructions
 6. Combine intro and is_good_str using string concatenation, and assign the result to a new variable, message.
 7. Print the values of half_int, is_good_str, and message.
 """
+
+# 1. Create a variable half as a float with the value 0.5.
 half = 0.5
+
+# 2. Create a string variable intro with the value "Hello! How are you?".
 intro = "Hello! How are you?"
+
+# 3. Create a boolean variable is_good and assign it the value True.
 is_good = True
 
-# Perform type conversions
+# 4. Convert half to an integer and store the result in a new variable, half_int.
 half_int = int(half)
+
+# 5. Convert is_good to a string and store it in a variable, is_good_str.
 is_good_str = str(is_good)
 
-# Combine variables into a message
+#6. Combine intro and is_good_str using string concatenation, and assign the result to a new variable, message.
 message = intro + " " + is_good_str
 
-# Print results
-print("half_int:", half_int)
-print("is_good_str:", is_good_str)
-print("message:", message)
+# 7. Print the values of half_int, is_good_str, and message.
+print (half_int,'\n',is_good_str,'\n', message)
+
+
+
+
+
+
+
+
+
+
+

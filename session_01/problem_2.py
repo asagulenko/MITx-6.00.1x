@@ -16,11 +16,17 @@ Instructions
 4. Finally, display the value of new_savings using the print() function.
 
 """
-# Assign values to variables
+
+# 1. Create a variable called monthly_savings and assign it the value 10.
 monthly_savings = 10
-num_months = 4 
-# Perform the calculation
+
+# 2. Define another variable, num_months, and set its value to 4.
+num_months = 4
+
+# 3. Multiply monthly_savings by num_months and store the result in a variable called new_savings.
 new_savings = monthly_savings * num_months
 
-# Print the result
-print(new_savings)
+# 4. Finally, display the value of new_savings using the print() function.
+print (new_savings)
+
+
