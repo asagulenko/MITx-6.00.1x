@@ -16,17 +16,15 @@ For example, if s = 'azcbobobegghakl', then your program should print
 Longest substring in alphabetical order is: beggh
 """
 
-import string
-
-s=('azcbobobegghabcdkl') #initial string
+s=('azcbobobegghakl') #initial string
 n_string=s[0] #temporary sequence string for comparison
 longest_string=s[0] #longest sequence in alphabetical order
 
 for char in s[1:]:
-    if string.ascii_letters.index(char)>=string.ascii_letters.index(n_string[-1]):
-        n_string+=char #if in alph order, adding to the sequence
-        if len(longest_string)<len(n_string): #comparing the length
+     if char>=n_string[-1]:
+        n_string+=char #if in alph order, adding char to the sequence
+        if len(longest_string)<len(n_string): #comparing the length of the sequences
             longest_string=n_string
-    else: n_string=char #starting a new sequence
+     else: n_string=char #rewriting the temporary sequence
     
-print (longest_string)
+print ("Longest string in alphabetical order is: "+str(longest_string))
