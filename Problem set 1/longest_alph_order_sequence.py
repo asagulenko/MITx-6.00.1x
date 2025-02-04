@@ -24,8 +24,9 @@ longest_string=s[0] #longest sequence in alphabetical order
 
 for char in s[1:]:
     if string.ascii_letters.index(char)>=string.ascii_letters.index(n_string[-1]):
-        n_string+=char
-        if len(longest_string)<len(n_string):
+        n_string+=char #if in alph order, adding to the sequence
+        if len(longest_string)<len(n_string): #comparing the length
             longest_string=n_string
-    else: n_string=char
+    else: n_string=char #starting a new sequence
+    
 print (longest_string)
